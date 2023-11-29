@@ -12,8 +12,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private float smoothRotationTime = .125f;
     private float currentVelocityRef;
+    public float movementValue { get; private set; }
 
-    [Header("Jumping")]
+    [Header("Gravity Handler")]
     [SerializeField] private Transform groundCheckerPos;
     [SerializeField] private LayerMask groundMask;
     [SerializeField] private float groundCheckerRadius;
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
         Vector3 move = new Vector3(horizontal, 0f, vertical).normalized;
+        movementValue = new Vector2(horizontal, vertical).magnitude;
 
         if(move.magnitude >= .1f)
         {

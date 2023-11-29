@@ -1977,7 +1977,7 @@ MonoBehaviour:
   controller: {fileID: 529692413}
   cam: {fileID: 963194228}
   moveSpeed: 7
-  smoothRotationTime: 0.125
+  smoothRotationTime: 0.1
   groundCheckerPos: {fileID: 1179947644}
   groundMask:
     serializedVersion: 2
@@ -2226,10 +2226,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soldier
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 5503d2c201d13ed4f87993dab4fca552, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 435d6f5b9e07ad64bb796aacfdece2bd, type: 2}
+    - target: {fileID: 5866666021909216657, guid: 5503d2c201d13ed4f87993dab4fca552, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5503d2c201d13ed4f87993dab4fca552, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1068002396}
   m_SourcePrefab: {fileID: 100100000, guid: 5503d2c201d13ed4f87993dab4fca552, type: 3}
 --- !u!4 &689269113 stripped
 Transform:
@@ -2442,6 +2453,30 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1068002394 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5503d2c201d13ed4f87993dab4fca552, type: 3}
+  m_PrefabInstance: {fileID: 689269112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1068002395 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 5503d2c201d13ed4f87993dab4fca552, type: 3}
+  m_PrefabInstance: {fileID: 689269112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1068002396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068002394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b44c5e2bd94b6c43a63694a9b135e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 529692412}
+  anim: {fileID: 1068002395}
 --- !u!1 &1179947643
 GameObject:
   m_ObjectHideFlags: 0
@@ -2683,7 +2718,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997050086}
-  m_LocalRotation: {x: 0.08914839, y: 0.12578355, z: -0.011349838, w: 0.9879789}
+  m_LocalRotation: {x: 0.08914839, y: 0.12578356, z: -0.011349839, w: 0.9879789}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
